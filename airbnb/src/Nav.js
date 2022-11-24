@@ -4,7 +4,7 @@ function Nav () {
     return (
         <nav>
 
-            <img src={logo} alt="airbnb-logo"/>
+            <img src={logo} alt="airbnb-logo" className="nav-logo"/>
         </nav>
     )
 }

@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Nav from './Nav';
+import Hero from './Hero';
+import Card from './Card';
 
 function App() {
   return (
     <div className="App">
       <Nav />
+      <Hero />
+      <Card />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
