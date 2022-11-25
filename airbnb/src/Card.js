@@ -1,20 +1,20 @@
-import card from "./images/katie-zaferes.png";
 import star from "./images/star.png"
 import "./Card.css"
 
-function Card() {
+function Card(props) {
+    
   return (
     <section className="card">
-      <img src={card} alt="photo-cards" className="photo-cards" />
+      <img src={`./images/${props.img}`} alt="photo-cards" className="photo-cards" />
       <div className="cards-components">
         <img src={star} alt="rating" className="rating" />
-        <span>5.0 </span>
-        <span>(6)  • </span>
-        <span>USA</span>
+        <span>{props.rating} </span>
+        <span>{props.reviewCount}  • </span>
+        <span>{props.country}</span>
       </div>
       <div>
-        <p>Life Lessons with Katie Zaferes</p>
-        <p><span className="bold">From $136</span> / person</p>
+        <p>{props.title}</p>
+        <p><span className="bold">From {props.price}</span> / person</p>
       </div>
     </section>
 

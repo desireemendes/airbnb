@@ -3,13 +3,21 @@ import './App.css';
 import Nav from './Nav';
 import Hero from './Hero';
 import Card from './Card';
+// import card from "./images/katie-zaferes.png";
 
 function App() {
   return (
     <div className="App">
       <Nav />
       <Hero />
-      <Card />
+      <Card 
+      img="katie-zaferes.png"
+      rating="5.0"
+      reviewCount="6"
+      country="Canada"
+      title="Life Lessons with Katie Zaferes"
+      price="$136"
+      />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
