@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './Nav';
 import Hero from './Hero';
 import Card from './Card';
-// import card from "./images/katie-zaferes.png";
+import katie from "./images/katie-zaferes.png";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Nav />
       <Hero />
       <Card 
-      img="katie-zaferes.png"
+      img={katie}
       rating="5.0"
       reviewCount="6"
       country="Canada"
