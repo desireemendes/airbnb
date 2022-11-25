@@ -1,0 +1,22 @@
+.photo-cards {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card-components {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 175px;
+    font-size: 12px;
+}
+
+.rating {
+    height: 14p;
+}
+
+.bold {
+    font-weight: bold;
+}
