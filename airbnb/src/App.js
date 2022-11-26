@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
 import Nav from './Nav';
 import Hero from './Hero';
 import Card from './Card';
-import katie from "./images/katie-zaferes.png";
+import data from "./data"
 
 function App() {
+  const cardElements = data.map(item => {
+    return ( <Card 
+    title={item.title} 
+    img={item.coverImg}
+    rating={item.stats.rating}
+    reviewCount={item.stats.reviewCount}
+    location={item.location}
+    price={item.price}
+    />
+    )
+  })
   return (
     <div className="App">
       <Nav />
       <Hero />
-      <Card 
-      img={katie}
-      rating="5.0"
-      reviewCount="6"
-      country="Canada"
-      title="Life Lessons with Katie Zaferes"
-      price="$136"
-      />
+      {cardElements}
     </div>
   );
 }
