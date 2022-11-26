@@ -4,6 +4,7 @@ import Hero from './Hero';
 import Card from './Card';
 import data from "./data"
 
+
 function App() {
   const cardElements = data.map(item => {
     return ( <Card 

@@ -5,12 +5,12 @@ function Card(props) {
     
   return (
     <section className="card">
-      <img src={props.img} alt="photo-cards" className="photo-cards" />
+      <img src={props.coverImg} alt="photo-cards" className="photo-cards" />
       <div className="cards-components">
         <img src={star} alt="rating" className="rating" />
         <span>{props.rating} </span>
-        <span>{props.reviewCount}  • </span>
-        <span>{props.country}</span>
+        <span>{props.reviewCount} </span>
+        <span>{props.location}</span>
       </div>
       <div>
         <p>{props.title}</p>
