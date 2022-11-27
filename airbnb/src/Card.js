@@ -2,11 +2,16 @@ import star from "./images/star.png"
 import "./Card.css"
 
 function Card(props) {
-  console.log(props.openSpots)
+  let badgeText
+  if (props.openSpots === 0) {
+      badgeText = "SOLD OUT"
+  } else if (props.location === "Online") {
+      badgeText = "ONLINE"
+  }
     
   return (
     <section className="card">
-     {props.openSpots === 0 && <div className="sold-badge">SOLD OUT</div>}
+     {badgeText && <div className="card--badge">{badgeText}</div>}
       <img src={props.coverImg} alt="photo-cards" className="photo-cards" />
       <div className="cards-components">
         <img src={star} alt="rating" className="rating" />
